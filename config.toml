@@ -1,0 +1,77 @@
+baseURL = ""
+title = "Persian"
+theme = "persian hugo"
+languageName = "En"
+languageCode = "en-us"
+paginate = "5"
+disqusShortname = ""
+themesDir = "themes"
+publishDir = "public"
+
+[outputs]
+home = [ "HTML", "RSS", "json" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+logo = "images/logo.png"
+description = "This is meta description"
+author = "Themefisher"
+search = true
+contact_form_action = "#"
+copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
+
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+
+  [params.preloader]
+  enable = true
+  preloader = ""
+
+  [params.cookies]
+  enable = true
+  expire_days = 2
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "about"
+weight = 2
+
+[[menu.main]]
+name = "Category"
+url = "categories/nature/"
+weight = 3
+
+[[menu.main]]
+name = "Contact"
+url = "contact"
+weight = 4
+
+[[menu.main]]
+name = "Privacy Policy"
+url = "privacy-policy"
+weight = 5
